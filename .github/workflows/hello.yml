@@ -1,0 +1,17 @@
+# workflows 
+# Should Have a name 
+name: Hello
+
+# when the workflow runs 
+on:
+  workflow_dispatch: 
+# jobs tells what the workflow should do , ther could be more than one jobs
+jobs:
+#1st job say hello
+  say-hello:
+  # given by github a ephermal ubuntu container which runs performs the steps and gets deleted 
+    runs-on: ubuntu-latest
+      # that ephermal contaoners will have steps to execute , hence name those steps and use run : run has the commamd 
+    steps:
+      - name: Say hello to everyone
+        run:  echo "Hello dosto"
