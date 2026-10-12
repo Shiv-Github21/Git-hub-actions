@@ -1,6 +1,6 @@
 from flask import Flask
 
-# Initialize the Flask application
+# Initialize the Flask applicationnnn
 app = Flask(__name__)
 
 # Define the route for the homepage
