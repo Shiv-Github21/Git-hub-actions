@@ -18,5 +18,5 @@ jobs:
         run: pip install ruff
         # this will run the linter tool on ur python files
       - name: check the files for linting
-        run: ruff.
+        run: ruff check .
     
