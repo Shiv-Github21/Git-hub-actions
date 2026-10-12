@@ -11,18 +11,22 @@ jobs:
         run: echo "clonning the code"
   
   build:
+  #jab tak code nhi hoga build nhi hoga
+    needs: [code]
     runs-on: ubuntu-latest
     steps:
       - name: build using docker
         run: echo "building using docker"
   
   test:
+    needs: [build]
     runs-on: ubuntu-latest
     steps:
       - name: Running the test-case
         run: echo "Running the test cases"
   
   deploy:
+    needs: [build,test]
     runs-on: ubuntu-latest
     steps:
       - name: Deploying the app
