@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout-code
-        uses: actions/chechout@v7
+        uses: actions/checkout@v7
       - name: docker-login
         uses: docker/login-action@v4
         with:
